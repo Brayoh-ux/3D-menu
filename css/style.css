@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    z-index: 2;
+    background-color: blue;
+    overflow: hidden;
+    /* this allows 3D effect to rotation */
+    perspective: 800px;
+    font-family: fantasy;
+}
+.main_container{
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("/img/grad-14.jpg") no-repeat center;
+    background-size: cover;
+    transition: .4s;
+}
+.overal{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content{
+    position: relative;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    width: 50%;
+}
+.menu_btn{
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-image: url("/img/menuicon.png");
+    background-size: cover;
+    cursor: pointer;
+}
+/* style navigation */
+.navigation_menu{
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 30%;
+}
+.navigation_menu ul{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+.navigation_menu ul li{
+    padding: 20px 0;
+}
+.navigation_menu ul li a{
+    color: white;
+    font-size: 2rem;
+    transition: .4s;
+    text-decoration: none;
+}
+.navigation_menu ul li a:hover{
+    color: #000;
+}
+.active{
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #11d1bb;
+    transition: 0.4s;
+    background-size: cover;
+    border-radius: 25px;
+
+    transform: scale(0.9) translateX(30%) rotate3d(0,1,0,-20deg);
+    box-shadow: 0 2px 8px rgba(30, 30, 30, .3);
+}
