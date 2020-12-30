@@ -18,7 +18,8 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(."/img/grad-14.jpg") no-repeat center;
+    background-repeat: no-repeat;
+    background: center;
     background-size: cover;
     transition: .4s;
 }
@@ -49,7 +50,6 @@ body{
     position: absolute;
     top: 30px;
     left: 30px;
-    background-image: url("./img/menuicon.png");
     background-size: cover;
     cursor: pointer;
 }
